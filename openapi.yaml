@@ -1,0 +1,259 @@
+openapi: 3.0.3
+info:
+  title: CoderDojo API
+  description: This is a sample server for a pet store.
+  termsOfService: http://example.com/terms/
+  contact:
+    name: API Support
+    url: http://www.example.com/support
+    email: support@example.com
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+  - url: https://api.coderdojokinsale.com/{version}
+    description: Local
+    variables:
+      version:
+        enum:
+        - v1
+        default: 'v1'
+paths:
+  /awards:
+    get:
+      summary: Get all belts
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Awards"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Belts'
+    post:
+      summary: Create new belt
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Awards"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+  /awards/{id}:
+    parameters:
+      - $ref: '#/components/parameters/ID'
+    get:
+      summary: Get belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Awards"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Belt'
+    put:
+      summary: Update belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Awards"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Awards"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+  /badges:
+    get:
+      summary: Get all belts
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Badges"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Belts'
+    post:
+      summary: Create new belt
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Badges"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+  /badges/{id}:
+    parameters:
+      - $ref: '#/components/parameters/ID'
+    get:
+      summary: Get belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Badges"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Belt'
+    put:
+      summary: Update belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Badges"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Badges"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+  /belts:
+    get:
+      summary: Get all belts
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Belts"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Belts'
+    post:
+      summary: Create new belt
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Belts"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+  /belts/{id}:
+    parameters:
+      - $ref: '#/components/parameters/ID'
+    get:
+      summary: Get belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Belts"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Belt'
+    put:
+      summary: Update belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Belts"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete belt by id
+      description: Gets a list of all lights that have been discovered by the bridge.
+      tags:
+        - "Belts"
+      responses:
+        200:
+          description: Returns a list of all lights in the system. If there are no lights in the system then the bridge will return an empty object, {}.
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        description:
+          type: string
+    Errors:
+      type: array
+      items:
+        $ref: '#/components/schemas/Error'
+    Belt:
+      type: object
+      properties:
+        uid:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+    Belts:
+      type: array
+      items:
+        $ref: '#/components/schemas/Belt'
+  
+  parameters:
+    ID:
+      name: id
+      required: true
+      in: path
+      description: ID of the resource
+      schema:
+        type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT 
+tags:
+- name: Awards
+- name: Badges
+- name: Belts
+- name: Users
+
+

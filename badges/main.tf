@@ -6,11 +6,3 @@ terraform {
     }
   }
 }
-
-module "badges" {
-  source = "./badges"
-}
-
-module "belts" {
-  source = "./belts"
-}
